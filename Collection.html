@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+
+    <!--font icon link-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  </head>
+
+  <body >
+
+  <!--header-->
+    <div class=" flex justify-center hidden md:flex p-3  text-2xl gap-20 " style="background-color: #1D232C; color:white;" id="popup">
+        <h1>Sign Up and GET 20% OFF for your first Order </h1>
+        <p class="cursor-pointer"> <i class="fa-regular fa-circle-xmark" style="color: #ffffff;" id="popupClose"></i></p >
+    </div>
+    <!--NavBar-->
+    <div class=" p-5  flex justify-between sticky top-0 bg-white ">
+      <h1 class="text-2xl font-bold"><a href="./Home.html">Nostra</a></h1> 
+      
+      <div class=" border-2 border-black rounded-3xl p-2 flex justify-between items-center w-1/2 gap-2">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;" ></i>
+            <input id ="search" placeholder="find your favorite.." class=" w-full outline-none ">
+      </div>
+
+        <p id="Menuicon" class="md:hidden cursor-pointer"><i class="fa-solid fa-bars" style="color: #000000;" ></i></p>
+
+      <div class="flex gap-10 font-bold hidden md:flex">
+        <a href="./Home.html">Home</a>
+        <a href="#newarrival">New Arrival</a>
+        <a href="#mostwanted">Most Wanted</a>
+        <a href="./Collection.html">Collection</a>
+        <a href="./Contact.html">Contact Us</a>
+      </div>
+    </div>
+
+    <!--SideNav-->
+
+    <section id="sidenav" class="p-5 text-lg fixed z-10 top-0 transition-all duration-1000" style="background-color: #1D232C; color: white; height: 100vh; width: 40%; left:-50%;">
+
+        <div>
+            <p class="text-right p-2 cursor-pointer">
+                <i class="fa-regular fa-circle-xmark" style="color: #ffffff;" id="sidenavClose"  ></i></p>
+            <ul">
+                <li class="pb-3"><a href="./Home.html">Home</a></li>
+                <li class="pb-3"><a href="">New Arrival</a></li>
+                <li class="pb-3"><a href="">Most wanted</a></li>
+                <li class="pb-3"><a href="./Collection.html">Collection</a></li>
+                <li class="pb-3"><a href="./Contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--filter-->
+
+    <section class="flex">
+
+        <div class="w-56 border-r-2  shadow-2xl" >
+        <ul class="p-5">
+            <h1 class=" text-2xl font-bold pb-3 "> Occasion</h1>
+            <div class="text-xl">
+            <li><input type="checkbox"> Winter</li>
+            <li><input type="checkbox"> Summer</li>
+            <li><input type="checkbox"> Beach</li>
+            <li><input type="checkbox"> Party</li>
+            <li><input type="checkbox"> Formal</li>
+            </div>
+        </ul>
+
+        <ul class="p-5">
+            <h1 class=" text-2xl font-bold pb-3 "> Type</h1>
+            <div class="text-xl">
+            <li><input type="checkbox"> SweatShirt</li>
+            <li><input type="checkbox"> Hoodies</li>
+            <li><input type="checkbox"> Shirts</li>
+            <li><input type="checkbox"> Oversize</li>
+            </div>
+        </ul>
+
+        <ul class="p-5">
+            <h1 class=" text-2xl font-bold pb-3 "> Bottom</h1>
+            <div class="text-xl">
+            <li><input type="checkbox"> Denim Jean</li>
+            <li><input type="checkbox"> Shorts</li>
+            <li><input type="checkbox"> Boxers</li>
+            <li><input type="checkbox"> Track</li>
+            </div>
+        </ul>
+
+        <ul class="p-5">
+            <h1 class=" text-2xl font-bold pb-3 "> Color</h1>
+            <div class="text-xl">
+            <li><input type="checkbox"> Black</li>
+            <li><input type="checkbox"> Green</li>
+            <li><input type="checkbox"> Red</li>
+            <li><input type="checkbox"> Blue</li>
+            <li><input type="checkbox"> Yellow</li>
+            </div>
+        </ul>
+
+         <ul class="p-5">
+            <h1 class=" text-2xl font-bold pb-3 "> Arrivals </h1>
+            <div class="text-xl">
+            <li><input type="checkbox"> New</li>
+            <li><input type="checkbox"> Modify</li>
+            <li><input type="checkbox"> Combo</li>
+            <li><input type="checkbox"> Exchange</li>
+            </div>
+        </ul>
+        </div>
+
+        <div class=" w-full">
+                
+
+             <div id="productContainer" class=" p-10 m-3 flex justify-between flex-wrap  gap-x-20 ">
+                
+                <div class="w-60">
+                <img src="./Tshirt/TS (1).jpg" alt="">
+                <h1>Hoodie </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./Tshirt/TS (2).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./Tshirt/TS (3).jpg" alt="">
+                <h1>Hoodie</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./Tshirt/TS (4).jpg" alt="">
+                <h1>Hoodie</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./Tshirt/TS (5).jpg" alt="">
+                <h1>Hoodie</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./SwtSrt/SS (1).jpg" alt="">
+                <h1>SweatShirt</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./SwtSrt/SS (2).jpg" alt="">
+                <h1>SweatShirt</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./SwtSrt/SS (3).jpg" alt="">
+                <h1>SweatShirt</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./SwtSrt/SS (4).jpg" alt="">
+                <h1>SweatShirt</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./SwtSrt/SS (5).jpg" alt="">
+                <h1>SweatShirt</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./images/Shirt (6).jpg" alt="">
+                <h1>SweatShirt</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./images/Shirt (7).jpg" alt="">
+                <h1>Shirt</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./images/Shirt (8).jpg" alt="">
+                <h1>Shirt</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./images/Shirt (9).jpg" alt="">
+                <h1>Shirt</h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./images/Shirt (10).jpg" alt="">
+                <h1>Shirt</h1>
+                <p>₹620</p>
+                </div>
+
+
+                <div class="w-60">
+                <img src="./SwtSrt/SS (6).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./SwtSrt/SS (7).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./SwtSrt/SS (8).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./SwtSrt/SS (9).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./SwtSrt/SS (10).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./Tshirt/TS (6).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./Tshirt/TS (7).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./Tshirt/TS (8).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./Tshirt/TS (9).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+                <div class="w-60">
+                <img src="./Tshirt/TS (10).jpg" alt="">
+                <h1>SweatShirt </h1>
+                <p>₹620</p>
+                </div>
+
+            </div>
+        </div>
+        </section>
+        <hr>
+
+        <!--Letter section-->
+        <section class="p-10 m-10 text-center">
+            <h1 class="text-4xl font-bold ">Join our News Letter</h1>
+
+            <p class="text-3xl p-2">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+
+            <p><input type="text" class="text-xl border-2 border-black mt-2 p-2 w-full" ></p>
+
+            <button class="p-4 mt-3 text-2xl rounded-2xl"  style="background-color: #1D232C; color: white;">Subscribe -></button>
+
+        </section>
+
+
+        <!--Footer-->
+        <section style="background-color: #1D232C;">
+
+            <div class="text-white p-10 text-2xl">
+            <h1 class="font-extrabold mb-4 text-4xl">NOSTRA</h1>
+
+            <p class="pb-5">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+
+            <p class="pb-5 flex gap-10"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> 
+
+                <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>            
+            </p>
+
+            <p>@ 2023 Nostra.com</p>
+            </div>
+        </section>
+    
+        <script src="./Collection.js"></script>
+</body>
+</html>

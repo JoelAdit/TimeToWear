@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+
+    <!--font icon link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <section>
+      <div class="relative">
+        <ul id="slider">
+          <li class="h-[50vh] relative">
+            <img
+              class="h-full w-full object-cover"
+              src="./images/slider-1.jpg"
+            />
+            <div class="absolute top-0 left-0 h-full w-full flex">
+              <h1
+                class="text-red-100 text-3xl font-bold my-auto w-full text-center p-10"
+              >
+                Level up your style with our-1
+              </h1>
+            </div>
+          </li>
+
+          <li class="h-[50vh] relative hidden">
+            <img
+              class="h-full w-full object-cover"
+              src="./images/slide-2.jpg"
+            />
+            <div class="absolute top-0 left-0 h-full w-full flex">
+              <h1
+                class="text-red-100 text-3xl font-bold my-auto w-full text-center p-10"
+              >
+                Level up your style with our-2
+              </h1>
+            </div>
+          </li>
+
+          <li class="h-[50vh] relative hidden">
+            <img
+              class="h-full w-full object-cover"
+              src="./images/slide-3.jpg"
+            />
+            <div class="absolute top-0 left-0 h-full w-full flex">
+              <h1
+                class="text-red-100 text-3xl font-bold my-auto w-full text-center p-10"
+              >
+                Level up your style with our-3
+              </h1>
+            </div>
+          </li>
+        </ul>
+
+        <div class="absolute px-5 flex h-full w-full top-0 left-0">
+          <div class="my-auto w-full flex justify-between">
+            <button onclick="prev()">
+              <img src="./Icons/Arrow-L.png" class="w-10" />
+            </button>
+
+            <button onclick="next()">
+              <img src="./Icons/Arrow-R.png" class="w-10" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./slide.js"></script>
+  </body>
+</html>

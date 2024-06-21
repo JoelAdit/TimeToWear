@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+
+    <!--font icon link-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  </head>
+
+  <body >
+
+    <!--header-->
+    <div class=" flex justify-center hidden md:flex p-3  text-2xl gap-20 " style="background-color: #1D232C; color:white;" id="popup">
+        <h1>Sign Up and GET 20% OFF for your first Order </h1>
+        <p class="cursor-pointer"> <i class="fa-regular fa-circle-xmark" style="color: #ffffff;" id="popupClose"></i></p >
+    </div>
+    <!--NavBar-->
+    <div class=" p-5  flex justify-between sticky top-0 bg-white ">
+      <h1 class="text-2xl font-bold"><a href="./Home.html">Nostra</a></h1> 
+      
+      <p id="Menuicon" class="md:hidden cursor-pointer"><i class="fa-solid fa-bars" style="color: #000000;" ></i></p>
+
+      <div class="flex gap-10 font-bold hidden md:flex">
+        <a href="./Home.html">Home</a>
+        <a href="#newarrival">New Arrival</a>
+        <a href="#mostwanted">Most Wanted</a>
+        <a href="./Collection.html">Collection</a>
+        <a href="./Contact.html">Contact Us</a>
+      </div>
+    </div>
+
+    <!--SideNav-->
+
+    <section id="sidenav" class="p-5 text-lg fixed z-10 top-0 transition-all duration-1000" style="background-color: #1D232C; color: white; height: 100vh; width: 40%; left:-50%;">
+
+        <div>
+            <p class="text-right p-2 cursor-pointer">
+                <i class="fa-regular fa-circle-xmark" style="color: #ffffff;" id="sidenavClose"  ></i></p>
+            <ul">
+                <li class="pb-3"><a href="./Home.html">Home</a></li>
+                <li class="pb-3"><a href="#New Arrival">New Arrival</a></li>
+                <li class="pb-3"><a href="#Most wanted">Most wanted</a></li>
+                <li class="pb-3"><a href="./Collection.html">Collection</a></li>
+                <li class="pb-3"><a href="./Contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Contact-->
+
+        <section class="bg-white dark:bg-gray-900">
+  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+      <p class="mb-8 lg:mb-16  text-center dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+      <form action="#" class="space-y-8">
+          <div>
+              <label for="email" class="block mb-2 text-md font-medium text-gray-900 dark:text-gray-300">Your email</label>
+              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+          </div>
+          <div>
+              <label for="subject" class="block mb-2 text-md font-medium text-gray-900 dark:text-gray-300">Subject</label>
+              <input type="text" id="subject" class="block p-3 w-full text-md text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+          </div>
+          <div class="sm:col-span-2">
+              <label for="message" class="block mb-2 text-md font-medium text-gray-900 dark:text-gray-400">Your message</label>
+              <textarea id="message" rows="6" class="block p-2.5 w-full text-md text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+          </div>
+          <button type="submit" class="py-3 px-5 text-md font-medium text-center text-white rounded-lg bg-black sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+      </form>
+  </div>
+</section>
+
+
+
+    <!--offer card-->
+        <section class=" m-10 p-10 flex justify-center gap-16 " style="background-color: #1D232C;">
+
+            <img src="./images/offer.jpg" alt="" class="max-w-2xl">
+
+            <div class="pt-16">
+            <h1 class=" text-white font-bold text-5xl">Limited Offer</h1>
+            <p class="text-white font-bold text-4xl pt-5">35% OFF on this for the first 30 Customers</p>
+            <button class="bg-white text-black p-3 text-2xl mt-5 rounded-xl">Shop Now-></button>
+            </div>
+        </section>
+
+        <!--Letter section-->
+        <section class="p-10 m-10 text-center">
+            <h1 class="text-4xl font-bold ">Join our News Letter</h1>
+
+            <p class="text-3xl p-2">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+
+            <p><input type="text" class="text-xl border-2 border-black mt-2 p-2 w-full" ></p>
+
+            <button class="p-4 mt-3 text-2xl rounded-2xl"  style="background-color: #1D232C; color: white;">Subscribe -></button>
+
+        </section>
+
+
+        <!--Footer-->
+        <section style="background-color: #1D232C;">
+
+            <div class="text-white p-10 text-2xl">
+            <h1 class="font-extrabold mb-4 text-4xl">NOSTRA</h1>
+
+            <p class="pb-5">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+
+            <p class="pb-5 flex gap-10"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> 
+
+                <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>            
+            </p>
+
+            <p>@ 2023 Nostra.com</p>
+            </div>
+        </section>
+
+        <script src="./Collection.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
