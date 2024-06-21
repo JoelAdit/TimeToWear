@@ -1,4 +1,4 @@
-**E-commerce Dress Sell Website :**
+**E-commerce Dress Sell Website 🛒:**
 
 Welcome to the E-commerce Dress Sell website repository!
 This project showcases an online store designed to sell dresses, providing a seamless shopping experience for users. 
